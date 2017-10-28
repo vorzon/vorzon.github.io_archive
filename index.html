@@ -80,43 +80,64 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/10/16/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/2017/10/28/使用不同版本python/" title="在一台电脑使用不同版本的python" itemprop="url">在一台电脑使用不同版本的python</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="飘忽无涯" target="_blank" itemprop="author">飘忽无涯</a>
 		
   <p class="article-time">
-    <time datetime="2017-10-16T04:29:47.718Z" itemprop="datePublished"> 发表于 2017-10-16</time>
+    <time datetime="2017-10-28T14:10:35.000Z" itemprop="datePublished"> 发表于 2017-10-28</time>
     
   </p>
 </header>
     <div class="article-content">
         <!-- 
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h3 id="使用-virtualenv"><a href="#使用-virtualenv" class="headerlink" title="使用 virtualenv"></a>使用 virtualenv</h3><ol>
+<li>安装 python3</li>
+<li><p>安装 virtualenv<br> <code>pip install virtualenv</code></p>
+</li>
+<li><p>安装 python2</p>
+</li>
+<li>用 python2 创建 virtualenv<br> i. 首先进入到你想创建项目的目录(cd xxx)<br> ii. 然后 <code>virtualenv -p D:\software\python2.7\python.exe python2.7</code><br> ps: D:\software\python2.7\python.exe 是你安装python2.7的路径，后面的 python2.7 是这个虚拟环境的名称，自己随便起<br> iii. 激活 python2.7  <code>python2.7\Scripts\activate</code>    </li>
+</ol>
+<p>成功之后，命令提示符前多了 (python2.7)<br>每次使用这个虚拟环境都要运行 python2.7\Scripts 目录下的 activate 激活<br>每次都要敲那么长命令似乎有点烦，所以可以把它添加到右键<br><br>这里要用到 <a href="http://www.sordum.org/7615/easy-context-menu-v1-6/" target="_blank" rel="external">Easy Context Menu</a></p>
+<ol>
+<li>点击中间带齿轮的鼠标(列表编辑器)</li>
+<li>点击新增</li>
+<li>找到目录 C:\windows\System32\cmd.exe 打开</li>
+<li>参数填 <code>/k + 你的activate.bat路径</code> (图标可修改)</li>
+<li>点击保存更改</li>
+<li>回到刚打开的页面，勾选刚才新增的菜单</li>
+<li>点击第一个鼠标(应用更改)</li>
+<li>完成！赶快到桌面右键看一下</li>
+</ol>
 
          -->
 
         
-              <p itemprop="description" >Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the </p>
+              <p itemprop="description" >使用 virtualenv
+安装 python3
+安装 virtualenv pip install virtualenv
+
+安装 python2
+
+用 python2 创建 virtualenv i. 首先进入到你想创建项目的目录(cd xxx) ii. 然后 virtuale</p>
           
 
         <p class="article-more-link">
           
-            <a href="/2017/10/16/hello-world/#more">Read More</a>
+            <a href="/2017/10/28/使用不同版本python/#more">Read More</a>
           
        </p>
     </div>
     <footer class="article-footer clearfix">
 <div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/python/">python</a>
+</div>
 
 
 </div>
@@ -147,6 +168,21 @@
 <aside class="clearfix">
 
   
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/python/" title="python">python<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
 
   
 

@@ -1,25 +1,27 @@
 
-  
-    <!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   
-    <title>about | 飘忽无涯</title>
+    <title>在一台电脑使用不同版本的python | 飘忽无涯</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="飘忽无涯">
     
 
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+    <meta name="description" content="使用 virtualenv 安装 python3 安装 virtualenv pip install virtualenv  安装 python2  用 python2 创建 virtualenv i. 首先进入到你想创建项目的目录(cd xxx) ii. 然后 virtualenv -p D:\software\python2.7\python.exe python2.7 ps: D:\soft">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在一台电脑使用不同版本的python">
+<meta property="og:url" content="http://yoursite.com/2017/10/28/使用不同版本python/index.html">
 <meta property="og:site_name" content="飘忽无涯">
+<meta property="og:description" content="使用 virtualenv 安装 python3 安装 virtualenv pip install virtualenv  安装 python2  用 python2 创建 virtualenv i. 首先进入到你想创建项目的目录(cd xxx) ii. 然后 virtualenv -p D:\software\python2.7\python.exe python2.7 ps: D:\soft">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-10-17T14:56:26.772Z">
+<meta property="og:updated_time" content="2017-10-28T14:37:25.794Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
+<meta name="twitter:title" content="在一台电脑使用不同版本的python">
+<meta name="twitter:description" content="使用 virtualenv 安装 python3 安装 virtualenv pip install virtualenv  安装 python2  用 python2 创建 virtualenv i. 首先进入到你想创建项目的目录(cd xxx) ii. 然后 virtualenv -p D:\software\python2.7\python.exe python2.7 ps: D:\soft">
 
     
     <link rel="alternative" href="/atom.xml" title="飘忽无涯" type="application/atom+xml">
@@ -34,9 +36,9 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-      <body>
-        <header>
-          
+  <body>
+    <header>
+      
 <div>
 		
 			<!-- <div id="imglogo">
@@ -72,31 +74,62 @@
 				</ul>
 			</nav>
 </div>
-        </header>
-        <div id="container">
-          <div id="main" class="page" itemscope itemprop="blogPost">
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
   
 	<article itemprop="articleBody">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/about/index.html" title="about" itemprop="url">about</a>
+      <a href="/2017/10/28/使用不同版本python/" title="在一台电脑使用不同版本的python" itemprop="url">在一台电脑使用不同版本的python</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="飘忽无涯" target="_blank" itemprop="author">飘忽无涯</a>
 		
   <p class="article-time">
-    <time datetime="2017-10-14T06:10:35.000Z" itemprop="datePublished"> 发表于 2017-10-14</time>
+    <time datetime="2017-10-28T14:10:35.000Z" itemprop="datePublished"> 发表于 2017-10-28</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
 		
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用-virtualenv"><span class="toc-number">1.</span> <span class="toc-text">使用 virtualenv</span></a></li></ol>
+		
+		</div>
+		
+		<h3 id="使用-virtualenv"><a href="#使用-virtualenv" class="headerlink" title="使用 virtualenv"></a>使用 virtualenv</h3><ol>
+<li>安装 python3</li>
+<li><p>安装 virtualenv<br> <code>pip install virtualenv</code></p>
+</li>
+<li><p>安装 python2</p>
+</li>
+<li>用 python2 创建 virtualenv<br> i. 首先进入到你想创建项目的目录(cd xxx)<br> ii. 然后 <code>virtualenv -p D:\software\python2.7\python.exe python2.7</code><br> ps: D:\software\python2.7\python.exe 是你安装python2.7的路径，后面的 python2.7 是这个虚拟环境的名称，自己随便起<br> iii. 激活 python2.7  <code>python2.7\Scripts\activate</code>    </li>
+</ol>
+<p>成功之后，命令提示符前多了 (python2.7)<br>每次使用这个虚拟环境都要运行 python2.7\Scripts 目录下的 activate 激活<br>每次都要敲那么长命令似乎有点烦，所以可以把它添加到右键<br><br>这里要用到 <a href="http://www.sordum.org/7615/easy-context-menu-v1-6/" target="_blank" rel="external">Easy Context Menu</a></p>
+<ol>
+<li>点击中间带齿轮的鼠标(列表编辑器)</li>
+<li>点击新增</li>
+<li>找到目录 C:\windows\System32\cmd.exe 打开</li>
+<li>参数填 <code>/k + 你的activate.bat路径</code> (图标可修改)</li>
+<li>点击保存更改</li>
+<li>回到刚打开的页面，勾选刚才新增的菜单</li>
+<li>点击第一个鼠标(应用更改)</li>
+<li>完成！赶快到桌面右键看一下</li>
+</ol>
+
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/python/">python</a>
+</div>
 
 
 </div>
@@ -105,7 +138,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/about/index.html" data-title="about | 飘忽无涯" data-tsina="" class="share clearfix">
+	  <div data-url="http://yoursite.com/2017/10/28/使用不同版本python/" data-title="在一台电脑使用不同版本的python | 飘忽无涯" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -120,8 +153,47 @@
 
 
 </div> 
-        </div>
-        <footer><div id="footer" >
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用-virtualenv"><span class="toc-number">1.</span> <span class="toc-text">使用 virtualenv</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/python/" title="python">python<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+
+  <div class="weixin">
+	<p class="asidetitle">微信公众号</p>
+	<img src="img/weixin.jpg">
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
 	
 	<div class="line">
 		<span></span>
@@ -162,7 +234,7 @@
 		</p>
 </div>
 </footer>
-        <script src="/js/jquery-2.0.3.min.js"></script>
+    <script src="/js/jquery-2.0.3.min.js"></script>
 <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 <script src="/js/jquery.qrcode-0.12.0.min.js"></script>
@@ -206,8 +278,36 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
   });
 });
 </script>
@@ -339,6 +439,5 @@ var _hmt = _hmt || [];
 
 <!-- Tiny_search End -->
 
-      </body>
-     </html>
-     
+  </body>
+</html>
