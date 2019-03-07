@@ -392,7 +392,7 @@ body >header {
   width: 100%;
   -webkit-box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
   box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
-  background: url("../") center #fff;
+  background: url("../") center #fafafa;
   color: #000;
   padding: 1em 0 0.8em;
 }
@@ -413,7 +413,6 @@ body >header >div {
   }
 }
 body >header a {
-  display: block;
   color: #000;
 }
 #imglogo {
@@ -642,7 +641,7 @@ header nav ul li a:hover {
   border-left: 0.5em solid #000;
 }
 #main section.post a h1 {
-  color: #2ca6cb;
+  color: #02b994;
   line-height: 2;
 }
 #main section.post a p {
@@ -721,7 +720,7 @@ header nav ul li a:hover {
   padding: 0.5em 1em;
 }
 #page-nav a {
-  color: #2ca6cb;
+  color: #02b994;
 }
 #page-nav a:hover {
   background: #ccc;
@@ -766,7 +765,7 @@ header nav ul li a:hover {
   font-weight: bold;
 }
 #page-nav .space {
-  color: #2ca6cb;
+  color: #02b994;
 }
 /* page layout */
 @media only screen and (min-width: 1024px) {
@@ -810,11 +809,11 @@ header nav ul li a:hover {
 }
 .archive-title h2 {
   width: 90%;
-  color: #2ca6cb;
+  color: #02b994;
   font-size: 120%;
 }
 .archive-title a {
-  color: #2ca6cb;
+  color: #02b994;
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -o-transition: color 0.5s;
@@ -830,7 +829,7 @@ header nav ul li a:hover {
   transition: color 0.5s;
 }
 .current {
-  color: #ea6753 !important;
+  color: #02b9b1 !important;
 }
 @media only screen and (min-width: 768px) {
   .archive-part {
@@ -881,13 +880,13 @@ header nav ul li a:hover {
 .page a,
 .link a,
 .photo a {
-  color: #2ca6cb;
+  color: #02b994;
 }
 .post a:hover,
 .page a:hover,
 .link a:hover,
 .photo a:hover {
-  color: #ea6753;
+  color: #02b9b1;
 }
 @media only screen and (min-width: 768px) {
   article header.article-info {
@@ -1590,7 +1589,7 @@ section.comment {
   color: #000;
 }
 .closeaside a:hover {
-  color: #2ca6cb;
+  color: #02b994;
 }
 .closeaside a::before {
   font-family: "FontAwesome";
@@ -1621,12 +1620,12 @@ section.comment {
 }
 .asidetitle {
   font-size: 1.1em;
-  color: #2ca6cb;
+  color: #02b994;
   padding: 0 0 0.3125em 0;
   border-bottom: 0.1875em solid #ccc;
 }
 .asidetitle a {
-  color: #2ca6cb;
+  color: #02b994;
 }
 .asidetitle a:hover {
   color: #000;
@@ -2032,7 +2031,7 @@ footer {
   }
 }
 .social-font a:hover:before {
-  color: #2ca6cb;
+  color: #02b994;
 }
 .icon-weibo:before,
 .icon-github:before,
@@ -2096,7 +2095,7 @@ footer {
   }
 }
 .copyright a {
-  color: #2ca6cb;
+  color: #02b994;
 }
 .copyright a:hover {
   color: #2ca6cb;
@@ -2244,7 +2243,7 @@ footer {
   margin-top: 1em;
 }
 .article-content .gist .gist-file .gist-meta a {
-  color: #2ca6cb;
+  color: #02b994;
   font-weight: normal;
 }
 .article-content .gist .gist-file .gist-meta a:hover {
